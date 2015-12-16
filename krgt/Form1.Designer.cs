@@ -129,7 +129,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(205, 186);
+            this.label5.Location = new System.Drawing.Point(205, 160);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(82, 13);
             this.label5.TabIndex = 45;
@@ -138,7 +138,7 @@
             // lbdesertbehavior
             // 
             this.lbdesertbehavior.FormattingEnabled = true;
-            this.lbdesertbehavior.Location = new System.Drawing.Point(205, 213);
+            this.lbdesertbehavior.Location = new System.Drawing.Point(208, 186);
             this.lbdesertbehavior.Name = "lbdesertbehavior";
             this.lbdesertbehavior.Size = new System.Drawing.Size(96, 95);
             this.lbdesertbehavior.TabIndex = 44;
@@ -146,7 +146,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(205, 340);
+            this.label4.Location = new System.Drawing.Point(205, 310);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 13);
             this.label4.TabIndex = 43;
@@ -155,7 +155,7 @@
             // lbdrinkbehavior
             // 
             this.lbdrinkbehavior.FormattingEnabled = true;
-            this.lbdrinkbehavior.Location = new System.Drawing.Point(208, 359);
+            this.lbdrinkbehavior.Location = new System.Drawing.Point(208, 340);
             this.lbdrinkbehavior.Name = "lbdrinkbehavior";
             this.lbdrinkbehavior.Size = new System.Drawing.Size(93, 95);
             this.lbdrinkbehavior.TabIndex = 42;
@@ -206,7 +206,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(355, 305);
+            this.label1.Location = new System.Drawing.Point(361, 295);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 36;
@@ -223,7 +223,7 @@
             // labeldesert
             // 
             this.labeldesert.AutoSize = true;
-            this.labeldesert.Location = new System.Drawing.Point(355, 157);
+            this.labeldesert.Location = new System.Drawing.Point(361, 160);
             this.labeldesert.Name = "labeldesert";
             this.labeldesert.Size = new System.Drawing.Size(38, 13);
             this.labeldesert.TabIndex = 34;
