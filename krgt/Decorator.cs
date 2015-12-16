@@ -5,12 +5,15 @@ using System.Text;
 
 namespace krgt
 {
+
     public abstract class Beverage
     {
         public String description = "Unknown";
 
         public abstract double cost();
     }
+
+
 
     //Desert 
     public class IceCream : Beverage
@@ -37,6 +40,7 @@ namespace krgt
         public override double cost()
         { return 1.5; }
     }
+
     public class IceCreamwithsauce : Beverage
     {
         Beverage beverage;
@@ -60,14 +64,25 @@ namespace krgt
         { return 0.5 + beverage.cost(); }
     }
 
-
-
     //Potato
     public class Fried : Beverage
     {
         public override double cost()
         { return 2.5; }
     }
+
+    public class Friedwithsauce : Beverage
+    {
+        Beverage beverage;
+
+        public Friedwithsauce(Beverage beverage)
+        { this.beverage = beverage; }
+
+
+        public override double cost()
+        { return 0.5 + beverage.cost(); }
+    }
+
 
     //Sandwich
     public class Chicken : Beverage
@@ -96,7 +111,55 @@ namespace krgt
         { return 4.5; }
     }
 
+    //Salat
+    public class ChickenSalat : Beverage
+    {
+        public override double cost()
+        { return 5; }
+    }
 
+    public class ChickenSalatwithsauce : Beverage
+    {
+        Beverage beverage;
+
+        public ChickenSalatwithsauce(Beverage beverage)
+        { this.beverage = beverage; }
+
+        public override double cost()
+        { return 1.5 + beverage.cost(); }
+    }
+    public class BeefSalat : Beverage
+    {
+        public override double cost()
+        { return 5.5; }
+    }
+
+    public class BeefSalatwithsauce : Beverage
+    {
+        Beverage beverage;
+
+        public BeefSalatwithsauce(Beverage beverage)
+        { this.beverage = beverage; }
+
+        public override double cost()
+        { return 0.5 + beverage.cost(); }
+    }
+    public class FishSalat : Beverage
+    {
+        public override double cost()
+        { return 4.5; }
+    }
+
+    public class FishSalatwithsauce : Beverage
+    {
+        Beverage beverage;
+
+        public FishSalatwithsauce(Beverage beverage)
+        { this.beverage = beverage; }
+
+        public override double cost()
+        { return 0.5 + beverage.cost(); }
+    }
 
     //Drink
     public class SodaWater : Beverage
