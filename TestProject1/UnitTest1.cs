@@ -137,8 +137,43 @@ namespace TestProject1
             Assert.AreEqual(total, 5);
             Assert.IsNotNull(total);
         }
+    }
 
-     
 
+    [TestClass]
+    public class Test3
+    {
+        [TestMethod]
+        public void TestMethod11()
+        {
+            Worker worker = new Worker("Tom", 3);
+            Supervisor supervisor = new Supervisor("Mary", 6);
+            Assert.IsNotInstanceOfType(worker.GetType(), typeof(Supervisor));
+            List<IEmployee> subordinate = new List<IEmployee>();
+            subordinate.Add(worker);
+            supervisor.AddSubordinate(worker);
+            Assert.IsNotNull(subordinate[0]);
+        }
+
+        [TestMethod]
+        public void TestMethod12()
+        {
+            Worker worker = new Worker("Tom", 3);
+            Supervisor supervisor = new Supervisor("Mary", 6);
+            Assert.IsNotInstanceOfType(worker.GetType(), typeof(Supervisor));
+            List<IEmployee> subordinate = new List<IEmployee>();
+            subordinate.Add(worker);
+            supervisor.AddSubordinate(worker);
+            Assert.IsNotNull(subordinate[0]);
+            Assert.AreEqual(subordinate[0], worker);
+
+            Worker w = new Worker("Jimm", 7);
+            Supervisor s = new Supervisor("Martin", 8);
+            subordinate.Add(w);
+            s.AddSubordinate(w);
+            Assert.AreEqual(subordinate[1], w);
+            Assert.IsNotNull(subordinate[1]);
+
+        }
     }
 }
