@@ -12,7 +12,31 @@ namespace krgt
         public abstract double cost();
     }
 
+    //Desert 
+    public class IceCream : Beverage
+    {
+        public IceCream()
+        { description = "IceCream"; }
 
+        public override double cost()
+        { return 1.5; }
+    }
+    public class Pie : Beverage
+    {
+        public Pie()
+        { description = "Pie"; }
+
+        public override double cost()
+        { return 1.5; }
+    }
+    public class Cake : Beverage
+    {
+        public Cake()
+        { description = "Cake"; }
+
+        public override double cost()
+        { return 1.5; }
+    }
 
 
     //Sandwich
