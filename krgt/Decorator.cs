@@ -14,7 +14,6 @@ namespace krgt
 
 
 
-    
 
     //Sandwich
     public class Chicken : Beverage
@@ -43,8 +42,8 @@ namespace krgt
         { return 4.5; }
     }
 
-    //Salat
-   
+
+
     //Drink
     public class SodaWater : Beverage
     {
@@ -69,5 +68,36 @@ namespace krgt
         { return 2; }
     }
 
-    
+    public class Honey : Beverage
+    {
+        Beverage beverage;
+
+        public Honey(Beverage beverage)
+        { this.beverage = beverage; }
+
+        public override double cost()
+        { return 0.5 + beverage.cost(); }
+    }
+
+    public class Lemon : Beverage
+    {
+        Beverage beverage;
+
+        public Lemon(Beverage beverage)
+        { this.beverage = beverage; }
+
+        public override double cost()
+        { return 0.5 + beverage.cost(); }
+    }
+
+    public class Syrop : Beverage
+    {
+        Beverage beverage;
+
+        public Syrop(Beverage beverage)
+        { this.beverage = beverage; }
+
+        public override double cost()
+        { return 1 + beverage.cost(); }
+    }
 }
