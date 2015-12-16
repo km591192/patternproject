@@ -8,8 +8,18 @@ using krgt;
 namespace TestProject1
 {
     [TestClass]
-    public class UnitTest1
+    public class Test2
     {
+        [TestMethod]
+        public void TestMethod6()
+        {
+            Beverage teawithlemon = new Lemon(new Tea());
+            double total = 0;
+            total = teawithlemon.cost();
+            Assert.AreEqual(total, 2.5);
+            Assert.IsNotNull(total);
+        }
+
         [TestMethod]
         public void TestMethod7()
         {
@@ -19,5 +29,8 @@ namespace TestProject1
             Assert.AreEqual(total, 2);
             Assert.IsNotNull(total);
         }
+
+     
+
     }
 }
