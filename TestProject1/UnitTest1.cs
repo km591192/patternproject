@@ -7,6 +7,86 @@ using krgt;
 
 namespace TestProject1
 {
+
+    [TestClass]
+    public class Test1
+    {
+        [TestMethod]
+        public void TestMethod1()
+        {
+            Beverage chicken = new Chicken();
+            Beverage fried = new Fried();
+            Beverage sodawater = new SodaWater();
+
+            double d = fried.cost() + chicken.cost() + sodawater.cost();
+            Facade facade = new Facade();
+            double db = facade.ChickenMenu(d);
+            Assert.AreEqual(db, 7.5);
+            Assert.IsNotNull(d);
+            Assert.IsNotNull(db);
+        }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
+            Beverage beef = new Beef();
+            Beverage fried = new Fried();
+            Beverage sodawater = new SodaWater();
+
+            double tr = fried.cost() + beef.cost() + sodawater.cost();
+            Facade facade1 = new Facade();
+            double tr1 = facade1.BeefMenu(tr);
+            Assert.AreEqual(tr1, 8);
+            Assert.IsNotNull(tr);
+            Assert.IsNotNull(tr1);
+        }
+
+        [TestMethod]
+        public void TestMethod3()
+        {
+            Beverage fish = new Fish();
+            Beverage fried = new Fried();
+            Beverage sodawater = new SodaWater();
+
+            double tr = fried.cost() + fish.cost() + sodawater.cost();
+            Facade facade1 = new Facade();
+            double tr1 = facade1.BeefMenu(tr);
+            Assert.AreEqual(tr1, 8);
+            Assert.IsNotNull(tr);
+            Assert.IsNotNull(tr1);
+        }
+
+
+        [TestMethod]
+        public void TestMethod4()
+        {
+            Beverage tea = new Tea();
+            Beverage cake = new Cake();
+
+            double tr = cake.cost() + tea.cost();
+            Facade facade1 = new Facade();
+            double tr1 = facade1.SweetCakeMenu(tr);
+            Assert.AreEqual(tr1, 3.5);
+            Assert.IsNotNull(tr);
+            Assert.IsNotNull(tr1);
+        }
+
+        [TestMethod]
+        public void TestMethod5()
+        {
+            Beverage tea = new Tea();
+            Beverage pie = new Pie();
+
+            double tr = pie.cost() + tea.cost();
+            Facade facade1 = new Facade();
+            double tr1 = facade1.SweetPieMenu(tr);
+            Assert.AreEqual(tr1, 3.5);
+            Assert.IsNotNull(tr);
+            Assert.IsNotNull(tr1);
+        }
+
+    }
+
     [TestClass]
     public class Test2
     {
