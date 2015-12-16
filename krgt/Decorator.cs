@@ -38,6 +38,12 @@ namespace krgt
         { return 1.5; }
     }
 
+    //Potato
+    public class Fried : Beverage
+    {
+        public override double cost()
+        { return 2.5; }
+    }
 
     //Sandwich
     public class Chicken : Beverage
