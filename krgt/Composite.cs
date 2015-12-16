@@ -9,11 +9,7 @@ using System.Windows.Forms;
 
 namespace krgt
 {
-    class Composite
-    {
-    }
-
-    public interface IEmployee
+       public interface IEmployee
     {
         void ShowLevel(ListBox lb);
     }

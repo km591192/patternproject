@@ -55,6 +55,7 @@
             this.lbpotato = new System.Windows.Forms.ListBox();
             this.labelsandwich = new System.Windows.Forms.Label();
             this.lbsandwich = new System.Windows.Forms.ListBox();
+            this.btnclearall = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnshow
@@ -65,6 +66,7 @@
             this.btnshow.TabIndex = 53;
             this.btnshow.Text = "show";
             this.btnshow.UseVisualStyleBackColor = true;
+            this.btnshow.Click += new System.EventHandler(this.btnshow_Click);
             // 
             // btndelete
             // 
@@ -74,6 +76,7 @@
             this.btndelete.TabIndex = 52;
             this.btndelete.Text = "-";
             this.btndelete.UseVisualStyleBackColor = true;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // btnadd
             // 
@@ -83,6 +86,7 @@
             this.btnadd.TabIndex = 51;
             this.btnadd.Text = "+";
             this.btnadd.UseVisualStyleBackColor = true;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
             // 
             // label7
             // 
@@ -179,12 +183,14 @@
             // 
             // btnorder
             // 
-            this.btnorder.Location = new System.Drawing.Point(782, 176);
+            this.btnorder.ForeColor = System.Drawing.Color.Green;
+            this.btnorder.Location = new System.Drawing.Point(787, 245);
             this.btnorder.Name = "btnorder";
             this.btnorder.Size = new System.Drawing.Size(75, 23);
             this.btnorder.TabIndex = 39;
             this.btnorder.Text = "OK";
             this.btnorder.UseVisualStyleBackColor = true;
+            this.btnorder.Click += new System.EventHandler(this.btnorder_Click);
             // 
             // label2
             // 
@@ -200,7 +206,7 @@
             this.lborder.FormattingEnabled = true;
             this.lborder.Location = new System.Drawing.Point(760, 49);
             this.lborder.Name = "lborder";
-            this.lborder.Size = new System.Drawing.Size(120, 121);
+            this.lborder.Size = new System.Drawing.Size(120, 186);
             this.lborder.TabIndex = 37;
             // 
             // label1
@@ -288,11 +294,24 @@
             this.lbsandwich.Size = new System.Drawing.Size(110, 277);
             this.lbsandwich.TabIndex = 27;
             // 
+            // btnclearall
+            // 
+            this.btnclearall.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnclearall.ForeColor = System.Drawing.Color.Red;
+            this.btnclearall.Location = new System.Drawing.Point(787, 310);
+            this.btnclearall.Name = "btnclearall";
+            this.btnclearall.Size = new System.Drawing.Size(75, 23);
+            this.btnclearall.TabIndex = 54;
+            this.btnclearall.Text = "Clear All";
+            this.btnclearall.UseVisualStyleBackColor = false;
+            this.btnclearall.Click += new System.EventHandler(this.btnclearall_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 476);
+            this.ClientSize = new System.Drawing.Size(946, 476);
+            this.Controls.Add(this.btnclearall);
             this.Controls.Add(this.btnshow);
             this.Controls.Add(this.btndelete);
             this.Controls.Add(this.btnadd);
@@ -356,6 +375,7 @@
         private System.Windows.Forms.ListBox lbpotato;
         private System.Windows.Forms.Label labelsandwich;
         private System.Windows.Forms.ListBox lbsandwich;
+        private System.Windows.Forms.Button btnclearall;
 
     }
 }
