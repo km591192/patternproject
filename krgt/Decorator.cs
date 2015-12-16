@@ -12,9 +12,62 @@ namespace krgt
         public abstract double cost();
     }
 
+    //Desert 
+    public class IceCream : Beverage
+    {
+        public IceCream()
+        { description = "IceCream"; }
+
+        public override double cost()
+        { return 1.5; }
+    }
+    public class Pie : Beverage
+    {
+        public Pie()
+        { description = "Pie"; }
+
+        public override double cost()
+        { return 1.5; }
+    }
+    public class Cake : Beverage
+    {
+        public Cake()
+        { description = "Cake"; }
+
+        public override double cost()
+        { return 1.5; }
+    }
+    public class IceCreamwithsauce : Beverage
+    {
+        Beverage beverage;
+
+        public IceCreamwithsauce(Beverage beverage)
+        { this.beverage = beverage; }
 
 
-    
+        public override double cost()
+        { return 0.8 + beverage.cost(); }
+    }
+    public class Cakewithsauce : Beverage
+    {
+        Beverage beverage;
+
+        public Cakewithsauce(Beverage beverage)
+        { this.beverage = beverage; }
+
+
+        public override double cost()
+        { return 0.5 + beverage.cost(); }
+    }
+
+
+
+    //Potato
+    public class Fried : Beverage
+    {
+        public override double cost()
+        { return 2.5; }
+    }
 
     //Sandwich
     public class Chicken : Beverage
@@ -43,7 +96,7 @@ namespace krgt
         { return 4.5; }
     }
 
-    //Salat
+
 
     //Drink
     public class SodaWater : Beverage
@@ -101,6 +154,4 @@ namespace krgt
         public override double cost()
         { return 1 + beverage.cost(); }
     }
-
-    
 }
