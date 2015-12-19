@@ -14,14 +14,14 @@ namespace TestProject1
         [TestMethod]
         public void TestMethod1()
         {
-            Beverage chicken = new Chicken();
-            Beverage fried = new Fried();
-            Beverage sodawater = new SodaWater();
+            Food chicken = new Chicken();
+            Food fried = new Fried();
+            Food sodawater = new SodaWater();
 
             double d = fried.cost() + chicken.cost() + sodawater.cost();
             Facade facade = new Facade();
             double db = facade.ChickenMenu(d);
-            Assert.AreEqual(db, 7.5);
+            Assert.AreEqual(db,6.75);
             Assert.IsNotNull(d);
             Assert.IsNotNull(db);
         }
@@ -29,14 +29,14 @@ namespace TestProject1
         [TestMethod]
         public void TestMethod2()
         {
-            Beverage beef = new Beef();
-            Beverage fried = new Fried();
-            Beverage sodawater = new SodaWater();
+            Food beef = new Beef();
+            Food fried = new Fried();
+            Food sodawater = new SodaWater();
 
             double tr = fried.cost() + beef.cost() + sodawater.cost();
             Facade facade1 = new Facade();
             double tr1 = facade1.BeefMenu(tr);
-            Assert.AreEqual(tr1, 8);
+            Assert.AreEqual(tr1, 7.2);
             Assert.IsNotNull(tr);
             Assert.IsNotNull(tr1);
         }
@@ -44,14 +44,14 @@ namespace TestProject1
         [TestMethod]
         public void TestMethod3()
         {
-            Beverage fish = new Fish();
-            Beverage fried = new Fried();
-            Beverage sodawater = new SodaWater();
+            Food fish = new Fish();
+            Food fried = new Fried();
+            Food sodawater = new SodaWater();
 
             double tr = fried.cost() + fish.cost() + sodawater.cost();
             Facade facade1 = new Facade();
             double tr1 = facade1.BeefMenu(tr);
-            Assert.AreEqual(tr1, 8);
+            Assert.AreEqual(tr1, 7.2);
             Assert.IsNotNull(tr);
             Assert.IsNotNull(tr1);
         }
@@ -60,13 +60,13 @@ namespace TestProject1
         [TestMethod]
         public void TestMethod4()
         {
-            Beverage tea = new Tea();
-            Beverage cake = new Cake();
+            Food tea = new Tea();
+            Food cake = new Cake();
 
             double tr = cake.cost() + tea.cost();
             Facade facade1 = new Facade();
             double tr1 = facade1.SweetCakeMenu(tr);
-            Assert.AreEqual(tr1, 3.5);
+            Assert.AreEqual(tr1, 2.975);
             Assert.IsNotNull(tr);
             Assert.IsNotNull(tr1);
         }
@@ -74,13 +74,13 @@ namespace TestProject1
         [TestMethod]
         public void TestMethod5()
         {
-            Beverage tea = new Tea();
-            Beverage pie = new Pie();
+            Food tea = new Tea();
+            Food pie = new Pie();
 
             double tr = pie.cost() + tea.cost();
             Facade facade1 = new Facade();
             double tr1 = facade1.SweetPieMenu(tr);
-            Assert.AreEqual(tr1, 3.5);
+            Assert.AreEqual(tr1, 2.975);
             Assert.IsNotNull(tr);
             Assert.IsNotNull(tr1);
         }
@@ -93,7 +93,7 @@ namespace TestProject1
         [TestMethod]
         public void TestMethod6()
         {
-            Beverage teawithlemon = new Lemon(new Tea());
+            Food teawithlemon = new Lemon(new Tea());
             double total = 0;
             total = teawithlemon.cost();
             Assert.AreEqual(total, 2.5);
@@ -103,7 +103,7 @@ namespace TestProject1
         [TestMethod]
         public void TestMethod7()
         {
-            Beverage tea = new Tea();
+            Food tea = new Tea();
             double total = 0;
             total = tea.cost();
             Assert.AreEqual(total, 2);
@@ -112,7 +112,7 @@ namespace TestProject1
         [TestMethod]
         public void TestMethod8()
         {
-            Beverage chicksal = new ChickenSalatwithsauce(new ChickenSalat());
+            Food chicksal = new ChickenSalatwithsauce(new ChickenSalat());
             double total = 0;
             total = chicksal.cost();
             Assert.AreEqual(total, 6.5);
@@ -122,7 +122,7 @@ namespace TestProject1
         [TestMethod]
         public void TestMethod9()
         {
-            Beverage beefsal = new BeefSalatwithsauce(new BeefSalat());
+            Food beefsal = new BeefSalatwithsauce(new BeefSalat());
             double total = 0;
             total = beefsal.cost();
             Assert.AreEqual(total, 6);
@@ -131,7 +131,7 @@ namespace TestProject1
         [TestMethod]
         public void TestMethod10()
         {
-            Beverage fishsal = new FishSalatwithsauce(new FishSalat());
+            Food fishsal = new FishSalatwithsauce(new FishSalat());
             double total = 0;
             total = fishsal.cost();
             Assert.AreEqual(total, 5);

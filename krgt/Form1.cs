@@ -20,33 +20,33 @@ namespace krgt
 
 
         Facade facade = new Facade();
-        Beverage icecream = new IceCream();
-        Beverage cake = new Cake();
-        Beverage pie = new Pie();
-        Beverage fried = new Fried();
-        Beverage chicken = new Chicken();
-        Beverage beef = new Beef();
-        Beverage fish = new Fish();
-        Beverage cheesburger = new Cheesburger();
-        Beverage gamburger = new Gamburger();
-        Beverage chickensalat = new ChickenSalat();
-        Beverage beefsalat = new BeefSalat();
-        Beverage fishsalat = new FishSalat();
-        Beverage sodawater = new SodaWater();
-        Beverage water = new Water();
-        Beverage tea = new Tea();
-        Beverage coffee = new Coffee();
+        Food icecream = new IceCream();
+        Food cake = new Cake();
+        Food pie = new Pie();
+        Food fried = new Fried();
+        Food chicken = new Chicken();
+        Food beef = new Beef();
+        Food fish = new Fish();
+        Food cheesburger = new Cheesburger();
+        Food gamburger = new Gamburger();
+        Food chickensalat = new ChickenSalat();
+        Food beefsalat = new BeefSalat();
+        Food fishsalat = new FishSalat();
+        Food sodawater = new SodaWater();
+        Food water = new Water();
+        Food tea = new Tea();
+        Food coffee = new Coffee();
 
-        Beverage coffeewithsyrop = new Syrop(new Coffee());
-        Beverage coffeewithlemon = new Lemon(new Coffee());
-        Beverage teawithlemon = new Lemon(new Tea());
-        Beverage teawithhoney = new Honey(new Tea());
-        Beverage fishsalatwithsauce = new FishSalatwithsauce(new FishSalat());
-        Beverage beefsalatwithsauce = new BeefSalatwithsauce(new BeefSalat());
-        Beverage chickensalatwithsauce = new ChickenSalatwithsauce(new ChickenSalat());
-        Beverage friedwithsauce = new Friedwithsauce(new Fried());
-        Beverage icecreamwithsauce = new IceCreamwithsauce(new IceCream());
-        Beverage cakewithsauce = new Cakewithsauce(new Cake());
+        Food coffeewithsyrop = new Syrop(new Coffee());
+        Food coffeewithlemon = new Lemon(new Coffee());
+        Food teawithlemon = new Lemon(new Tea());
+        Food teawithhoney = new Honey(new Tea());
+        Food fishsalatwithsauce = new FishSalatwithsauce(new FishSalat());
+        Food beefsalatwithsauce = new BeefSalatwithsauce(new BeefSalat());
+        Food chickensalatwithsauce = new ChickenSalatwithsauce(new ChickenSalat());
+        Food friedwithsauce = new Friedwithsauce(new Fried());
+        Food icecreamwithsauce = new IceCreamwithsauce(new IceCream());
+        Food cakewithsauce = new Cakewithsauce(new Cake());
 
 
         public Form1()
@@ -153,7 +153,7 @@ namespace krgt
                 // обходим все дочерние узлы элемента user
                 foreach (XmlNode childnode in xnode.ChildNodes)
                 {
-                    // если узел - prop
+                    // если узел - имя заданное
                     if (childnode.Name == childnote)
                     {
                         lb.Items.Add(childnode.InnerText);

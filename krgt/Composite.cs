@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace krgt
 {
-       public interface IEmployee
+     public interface IEmployee
     {
         void ShowLevel(ListBox lb);
     }
@@ -47,7 +47,6 @@ namespace krgt
         void IEmployee.ShowLevel(ListBox lb)
         {
             lb.Items.Add(name + " showed level of " + level);
-            //show all the subordinate's happiness level
             foreach (IEmployee i in subordinate)
             { i.ShowLevel(lb); }
         }

@@ -110,7 +110,7 @@
             this.lbshowworkers.FormattingEnabled = true;
             this.lbshowworkers.Location = new System.Drawing.Point(533, 173);
             this.lbshowworkers.Name = "lbshowworkers";
-            this.lbshowworkers.Size = new System.Drawing.Size(179, 108);
+            this.lbshowworkers.Size = new System.Drawing.Size(208, 108);
             this.lbshowworkers.TabIndex = 48;
             // 
             // label6
@@ -340,7 +340,7 @@
             this.Controls.Add(this.labelsandwich);
             this.Controls.Add(this.lbsandwich);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "MCDONALDS model";
             this.ResumeLayout(false);
             this.PerformLayout();
 

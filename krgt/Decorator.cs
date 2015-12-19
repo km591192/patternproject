@@ -6,17 +6,24 @@ using System.Text;
 namespace krgt
 {
 
-    public abstract class Beverage
+    public abstract class Food
     {
-        public String description = "Unknown";
+        public String description = "x";
 
         public abstract double cost();
+
+        public String getDescription()
+        { return description; }
     }
 
 
+    public abstract class Decorator : Food
+    {
+        public abstract String getDescription();
+    }
 
     //Desert 
-    public class IceCream : Beverage
+    public class IceCream : Food
     {
         public IceCream()
         { description = "IceCream"; }
@@ -24,7 +31,7 @@ namespace krgt
         public override double cost()
         { return 1.5; }
     }
-    public class Pie : Beverage
+    public class Pie : Food
     {
         public Pie()
         { description = "Pie"; }
@@ -32,7 +39,7 @@ namespace krgt
         public override double cost()
         { return 1.5; }
     }
-    public class Cake : Beverage
+    public class Cake : Food
     {
         public Cake()
         { description = "Cake"; }
@@ -41,180 +48,248 @@ namespace krgt
         { return 1.5; }
     }
 
-    public class IceCreamwithsauce : Beverage
+    public class IceCreamwithsauce : Decorator
     {
-        Beverage beverage;
+        Food food;
 
-        public IceCreamwithsauce(Beverage beverage)
-        { this.beverage = beverage; }
+        public IceCreamwithsauce(Food food)
+        { this.food = food; }
 
+
+        public override String getDescription()
+        { return food.getDescription() + " wtih sauce"; }
 
         public override double cost()
-        { return 0.8 + beverage.cost(); }
+        { return 0.8 + food.cost(); }
     }
-    public class Cakewithsauce : Beverage
+    public class Cakewithsauce : Decorator
     {
-        Beverage beverage;
+        Food food;
 
-        public Cakewithsauce(Beverage beverage)
-        { this.beverage = beverage; }
+        public Cakewithsauce(Food food)
+        { this.food = food; }
 
+        public override String getDescription()
+        { return food.getDescription() + "with sauce"; }
 
         public override double cost()
-        { return 0.5 + beverage.cost(); }
+        { return 0.5 + food.cost(); }
     }
 
     //Potato
-    public class Fried : Beverage
+    public class Fried : Food
     {
+        public Fried()
+        { description = "Fried potato"; }
+
         public override double cost()
         { return 2.5; }
     }
 
-    public class Friedwithsauce : Beverage
+    public class Friedwithsauce : Decorator
     {
-        Beverage beverage;
+       Food food;
 
-        public Friedwithsauce(Beverage beverage)
-        { this.beverage = beverage; }
+       public Friedwithsauce(Food food)
+        { this.food = food; }
 
+
+        public override String getDescription()
+        { return food.getDescription() + "with sauce"; }
 
         public override double cost()
-        { return 0.5 + beverage.cost(); }
+        { return 0.5 + food.cost(); }
     }
 
 
     //Sandwich
-    public class Chicken : Beverage
+    public class Chicken : Food
     {
+        public Chicken()
+        { description = "Chicken"; }
+
         public override double cost()
         { return 3.5; }
     }
-    public class Cheesburger : Beverage
+    public class Cheesburger : Food
     {
+        public Cheesburger()
+        { description = "Cheesburger"; }
+
         public override double cost()
         { return 3; }
     }
-    public class Gamburger : Beverage
+    public class Gamburger : Food
     {
+         public Gamburger()
+        { description = "Gamburger"; }
+
         public override double cost()
         { return 3; }
     }
-    public class Beef : Beverage
+    public class Beef : Food
     {
+         public Beef()
+        { description = "Beef"; }
+
         public override double cost()
         { return 4; }
     }
-    public class Fish : Beverage
+    public class Fish : Food
     {
+         public Fish()
+        { description = "Fish"; }
+
         public override double cost()
         { return 4.5; }
     }
 
     //Salat
-    public class ChickenSalat : Beverage
+    public class ChickenSalat : Food
     {
+         public ChickenSalat()
+        { description = "Chicken salat"; }
+
         public override double cost()
         { return 5; }
     }
 
-    public class ChickenSalatwithsauce : Beverage
+    public class ChickenSalatwithsauce : Decorator
     {
-        Beverage beverage;
+        Food food;
 
-        public ChickenSalatwithsauce(Beverage beverage)
-        { this.beverage = beverage; }
+        public ChickenSalatwithsauce(Food food)
+        { this.food = food; }
+
+        public override String getDescription()
+        { return food.getDescription() + "with sauce"; }
 
         public override double cost()
-        { return 1.5 + beverage.cost(); }
+        { return 1.5 + food.cost(); }
     }
-    public class BeefSalat : Beverage
+    public class BeefSalat : Food
     {
+
+         public BeefSalat()
+        { description = "Beef salat"; }
+
         public override double cost()
         { return 5.5; }
     }
 
-    public class BeefSalatwithsauce : Beverage
+    public class BeefSalatwithsauce : Decorator
     {
-        Beverage beverage;
+        Food food;
 
-        public BeefSalatwithsauce(Beverage beverage)
-        { this.beverage = beverage; }
+        public BeefSalatwithsauce(Food food)
+        { this.food = food; }
+
+        public override String getDescription()
+        { return  food.getDescription() + "with sauce"; }
 
         public override double cost()
-        { return 0.5 + beverage.cost(); }
+        { return 0.5 + food.cost(); }
     }
-    public class FishSalat : Beverage
+    public class FishSalat : Food
     {
+         public FishSalat()
+        { description = "Fish salat"; }
+
         public override double cost()
         { return 4.5; }
     }
 
-    public class FishSalatwithsauce : Beverage
+    public class FishSalatwithsauce : Decorator
     {
-        Beverage beverage;
+        Food food;
 
-        public FishSalatwithsauce(Beverage beverage)
-        { this.beverage = beverage; }
+        public FishSalatwithsauce(Food food)
+        { this.food = food; }
+
+        public override String getDescription()
+        { return food.getDescription() + "with sauce"; }
 
         public override double cost()
-        { return 0.5 + beverage.cost(); }
+        { return 0.5 + food.cost(); }
     }
 
     //Drink
-    public class SodaWater : Beverage
+    public class SodaWater : Food
     {
+         public SodaWater()
+        { description = "Pepsi/Cola/Fanta/Sprite/7up"; }
+
         public override double cost()
         { return 1.5; }
     }
 
-    public class Water : Beverage
+    public class Water : Food
     {
+         public Water()
+        { description = "Water"; }
+
         public override double cost()
         { return 1; }
     }
 
-    public class Tea : Beverage
-    {
+    public class Tea : Food
+    { 
+        public Tea()
+        { description = "Tea"; }
+
         public override double cost()
         { return 2; }
     }
-    public class Coffee : Beverage
+    public class Coffee : Food
     {
+         public Coffee()
+        { description = "Coffee"; }
+
         public override double cost()
         { return 2; }
     }
 
-    public class Honey : Beverage
+    public class Honey : Decorator
     {
-        Beverage beverage;
+        Food food;
 
-        public Honey(Beverage beverage)
-        { this.beverage = beverage; }
+        public Honey(Food food)
+        { this.food = food; }
+
+        public override String getDescription()
+        { return food.getDescription() + "with honey"; }
 
         public override double cost()
-        { return 0.5 + beverage.cost(); }
+        { return 0.5 + food.cost(); }
     }
 
-    public class Lemon : Beverage
+    public class Lemon : Decorator
     {
-        Beverage beverage;
+        Food food;
 
-        public Lemon(Beverage beverage)
-        { this.beverage = beverage; }
+        public Lemon(Food food)
+        { this.food = food; }
+
+
+        public override String getDescription()
+        { return food.getDescription() + "with lemon"; }
 
         public override double cost()
-        { return 0.5 + beverage.cost(); }
+        { return 0.5 + food.cost(); }
     }
 
-    public class Syrop : Beverage
+    public class Syrop : Decorator
     {
-        Beverage beverage;
+         Food food;
 
-        public Syrop(Beverage beverage)
-        { this.beverage = beverage; }
+        public Syrop(Food food)
+        { this.food = food; }
+
+
+        public override String getDescription()
+        { return food.getDescription() + "with syrop"; }
 
         public override double cost()
-        { return 1 + beverage.cost(); }
+        { return 1 + food.cost(); }
     }
 }
