@@ -1,0 +1,8 @@
+D:\onu\ИПО\krgt\krgt\obj\x86\Debug\krgt.Form1.resources
+D:\onu\ИПО\krgt\krgt\obj\x86\Debug\krgt.Properties.Resources.resources
+D:\onu\ИПО\krgt\krgt\obj\x86\Debug\krgt.csproj.GenerateResource.Cache
+D:\onu\ИПО\krgt\krgt\bin\Debug\krgt.exe
+D:\onu\ИПО\krgt\krgt\bin\Debug\krgt.pdb
+D:\onu\ИПО\krgt\krgt\obj\x86\Debug\krgt.exe
+D:\onu\ИПО\krgt\krgt\obj\x86\Debug\krgt.pdb
+D:\onu\ИПО\krgt\krgt\obj\x86\Debug\krgt.csprojResolveAssemblyReference.cache

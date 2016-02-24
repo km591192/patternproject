@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="629bea02-498e-4dad-9527-f4afe0945dd5" name="User@USER-34C25 2015-12-16 23:07:59" runUser="User-34c25\User" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Локальные" id="b3e9a8e9-d6f6-4451-9368-cfa70fe68f16">
+    <Description>Это - параметры по умолчанию для локального тестового запуска.</Description>
+    <Deployment enabled="false" runDeploymentRoot="User_USER-34C25 2015-12-16 23_07_59">
+      <DeploymentItem filename="D:\onu\ИПО\krgt\krgt\bin\Debug\krgt.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-12-16T23:07:59.5703271+02:00" queuing="2015-12-16T23:07:59.7383367+02:00" start="2015-12-16T23:07:59.7523375+02:00" finish="2015-12-16T23:08:00.3393711+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="10" executed="10" passed="10" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod10" storage="d:\onu\ипо\krgt\testproject1\bin\debug\testproject1.dll" id="692430c7-4c85-6dff-1bc3-d0bfece3800d">
+      <Execution id="45a7c167-3f66-40f8-8cda-1e5d445200a7" />
+      <TestMethod codeBase="D:/onu/ИПО/krgt/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.Test2, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod10" />
+    </UnitTest>
+    <UnitTest name="TestMethod1" storage="d:\onu\ипо\krgt\testproject1\bin\debug\testproject1.dll" id="d1502b1c-5ef7-dd41-2c56-29365ac4e002">
+      <Execution id="3e768488-b564-4efa-b45f-c8ce93e682c8" />
+      <TestMethod codeBase="D:/onu/ИПО/krgt/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.Test1, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="TestMethod8" storage="d:\onu\ипо\krgt\testproject1\bin\debug\testproject1.dll" id="634b9050-9cf1-ec9f-5e9a-6b6b65a1d5e7">
+      <Execution id="7d9523aa-413c-4406-b482-3c8ec99f455d" />
+      <TestMethod codeBase="D:/onu/ИПО/krgt/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.Test2, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod8" />
+    </UnitTest>
+    <UnitTest name="TestMethod4" storage="d:\onu\ипо\krgt\testproject1\bin\debug\testproject1.dll" id="a6acd03a-a2db-f80c-bcb4-0ea4e23c1619">
+      <Execution id="1197a6b8-9643-4721-94a4-753bbba41f7c" />
+      <TestMethod codeBase="D:/onu/ИПО/krgt/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.Test1, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod4" />
+    </UnitTest>
+    <UnitTest name="TestMethod9" storage="d:\onu\ипо\krgt\testproject1\bin\debug\testproject1.dll" id="4868da3a-4dd6-c233-2a85-0359299948ad">
+      <Execution id="00240356-68cf-4b3a-8b45-6f314f59f95d" />
+      <TestMethod codeBase="D:/onu/ИПО/krgt/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.Test2, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod9" />
+    </UnitTest>
+    <UnitTest name="TestMethod6" storage="d:\onu\ипо\krgt\testproject1\bin\debug\testproject1.dll" id="d11305d8-8f4f-c704-3c83-80f1146d0d52">
+      <Execution id="514dbb2c-8d05-4ac0-8de5-9bd5ea8b353a" />
+      <TestMethod codeBase="D:/onu/ИПО/krgt/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.Test2, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod6" />
+    </UnitTest>
+    <UnitTest name="TestMethod2" storage="d:\onu\ипо\krgt\testproject1\bin\debug\testproject1.dll" id="01ee3eb1-07a3-04a0-6db9-e213f599c73a">
+      <Execution id="2920d407-a682-47e5-a0f6-462700625380" />
+      <TestMethod codeBase="D:/onu/ИПО/krgt/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.Test1, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod2" />
+    </UnitTest>
+    <UnitTest name="TestMethod3" storage="d:\onu\ипо\krgt\testproject1\bin\debug\testproject1.dll" id="ffd81534-dc3e-b6bf-4714-2224d7e98700">
+      <Execution id="66f7d97a-a226-4650-aa3e-bdd1ee43efda" />
+      <TestMethod codeBase="D:/onu/ИПО/krgt/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.Test1, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod3" />
+    </UnitTest>
+    <UnitTest name="TestMethod5" storage="d:\onu\ипо\krgt\testproject1\bin\debug\testproject1.dll" id="89ec6f36-9b96-265e-a1c4-0908c686cef2">
+      <Execution id="c6f5a5f2-ed09-43dd-ba5a-7f068405f9bb" />
+      <TestMethod codeBase="D:/onu/ИПО/krgt/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.Test1, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod5" />
+    </UnitTest>
+    <UnitTest name="TestMethod7" storage="d:\onu\ипо\krgt\testproject1\bin\debug\testproject1.dll" id="c032974c-c399-20c0-5d78-a0f948c2a820">
+      <Execution id="ea3bb7af-72d4-4970-a6ff-939b1bf1f88e" />
+      <TestMethod codeBase="D:/onu/ИПО/krgt/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.Test2, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod7" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="01ee3eb1-07a3-04a0-6db9-e213f599c73a" executionId="2920d407-a682-47e5-a0f6-462700625380" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4868da3a-4dd6-c233-2a85-0359299948ad" executionId="00240356-68cf-4b3a-8b45-6f314f59f95d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="634b9050-9cf1-ec9f-5e9a-6b6b65a1d5e7" executionId="7d9523aa-413c-4406-b482-3c8ec99f455d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="692430c7-4c85-6dff-1bc3-d0bfece3800d" executionId="45a7c167-3f66-40f8-8cda-1e5d445200a7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="89ec6f36-9b96-265e-a1c4-0908c686cef2" executionId="c6f5a5f2-ed09-43dd-ba5a-7f068405f9bb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a6acd03a-a2db-f80c-bcb4-0ea4e23c1619" executionId="1197a6b8-9643-4721-94a4-753bbba41f7c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c032974c-c399-20c0-5d78-a0f948c2a820" executionId="ea3bb7af-72d4-4970-a6ff-939b1bf1f88e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d11305d8-8f4f-c704-3c83-80f1146d0d52" executionId="514dbb2c-8d05-4ac0-8de5-9bd5ea8b353a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d1502b1c-5ef7-dd41-2c56-29365ac4e002" executionId="3e768488-b564-4efa-b45f-c8ce93e682c8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ffd81534-dc3e-b6bf-4714-2224d7e98700" executionId="66f7d97a-a226-4650-aa3e-bdd1ee43efda" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="2920d407-a682-47e5-a0f6-462700625380" testId="01ee3eb1-07a3-04a0-6db9-e213f599c73a" testName="TestMethod2" computerName="USER-34C25" duration="00:00:00.0296330" startTime="2015-12-16T23:07:59.7823392+02:00" endTime="2015-12-16T23:08:00.1393596+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2920d407-a682-47e5-a0f6-462700625380">
+    </UnitTestResult>
+    <UnitTestResult executionId="00240356-68cf-4b3a-8b45-6f314f59f95d" testId="4868da3a-4dd6-c233-2a85-0359299948ad" testName="TestMethod9" computerName="USER-34C25" duration="00:00:00.0012110" startTime="2015-12-16T23:08:00.1443599+02:00" endTime="2015-12-16T23:08:00.1513603+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00240356-68cf-4b3a-8b45-6f314f59f95d">
+    </UnitTestResult>
+    <UnitTestResult executionId="7d9523aa-413c-4406-b482-3c8ec99f455d" testId="634b9050-9cf1-ec9f-5e9a-6b6b65a1d5e7" testName="TestMethod8" computerName="USER-34C25" duration="00:00:00.0012063" startTime="2015-12-16T23:08:00.1563606+02:00" endTime="2015-12-16T23:08:00.1693613+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d9523aa-413c-4406-b482-3c8ec99f455d">
+    </UnitTestResult>
+    <UnitTestResult executionId="45a7c167-3f66-40f8-8cda-1e5d445200a7" testId="692430c7-4c85-6dff-1bc3-d0bfece3800d" testName="TestMethod10" computerName="USER-34C25" duration="00:00:00.0010271" startTime="2015-12-16T23:08:00.1723615+02:00" endTime="2015-12-16T23:08:00.1793619+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="45a7c167-3f66-40f8-8cda-1e5d445200a7">
+    </UnitTestResult>
+    <UnitTestResult executionId="c6f5a5f2-ed09-43dd-ba5a-7f068405f9bb" testId="89ec6f36-9b96-265e-a1c4-0908c686cef2" testName="TestMethod5" computerName="USER-34C25" duration="00:00:00.0009245" startTime="2015-12-16T23:08:00.1843622+02:00" endTime="2015-12-16T23:08:00.1893625+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c6f5a5f2-ed09-43dd-ba5a-7f068405f9bb">
+    </UnitTestResult>
+    <UnitTestResult executionId="1197a6b8-9643-4721-94a4-753bbba41f7c" testId="a6acd03a-a2db-f80c-bcb4-0ea4e23c1619" testName="TestMethod4" computerName="USER-34C25" duration="00:00:00.0034817" startTime="2015-12-16T23:08:00.1943628+02:00" endTime="2015-12-16T23:08:00.2143639+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1197a6b8-9643-4721-94a4-753bbba41f7c">
+    </UnitTestResult>
+    <UnitTestResult executionId="ea3bb7af-72d4-4970-a6ff-939b1bf1f88e" testId="c032974c-c399-20c0-5d78-a0f948c2a820" testName="TestMethod7" computerName="USER-34C25" duration="00:00:00.0021766" startTime="2015-12-16T23:08:00.2193642+02:00" endTime="2015-12-16T23:08:00.2373652+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea3bb7af-72d4-4970-a6ff-939b1bf1f88e">
+    </UnitTestResult>
+    <UnitTestResult executionId="514dbb2c-8d05-4ac0-8de5-9bd5ea8b353a" testId="d11305d8-8f4f-c704-3c83-80f1146d0d52" testName="TestMethod6" computerName="USER-34C25" duration="00:00:00.0027025" startTime="2015-12-16T23:08:00.2393653+02:00" endTime="2015-12-16T23:08:00.2603665+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="514dbb2c-8d05-4ac0-8de5-9bd5ea8b353a">
+    </UnitTestResult>
+    <UnitTestResult executionId="3e768488-b564-4efa-b45f-c8ce93e682c8" testId="d1502b1c-5ef7-dd41-2c56-29365ac4e002" testName="TestMethod1" computerName="USER-34C25" duration="00:00:00.0041680" startTime="2015-12-16T23:08:00.2653668+02:00" endTime="2015-12-16T23:08:00.2843679+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e768488-b564-4efa-b45f-c8ce93e682c8">
+    </UnitTestResult>
+    <UnitTestResult executionId="66f7d97a-a226-4650-aa3e-bdd1ee43efda" testId="ffd81534-dc3e-b6bf-4714-2224d7e98700" testName="TestMethod3" computerName="USER-34C25" duration="00:00:00.0092601" startTime="2015-12-16T23:08:00.2883681+02:00" endTime="2015-12-16T23:08:00.3143696+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66f7d97a-a226-4650-aa3e-bdd1ee43efda">
+    </UnitTestResult>
+  </Results>
+</TestRun>

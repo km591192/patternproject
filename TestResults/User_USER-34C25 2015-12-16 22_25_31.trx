@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="15a12e03-8b52-415e-93a7-822d16b129f3" name="User@USER-34C25 2015-12-16 22:25:31" runUser="User-34c25\User" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Локальные" id="b3e9a8e9-d6f6-4451-9368-cfa70fe68f16">
+    <Description>Это - параметры по умолчанию для локального тестового запуска.</Description>
+    <Deployment enabled="false" runDeploymentRoot="User_USER-34C25 2015-12-16 22_25_31">
+      <DeploymentItem filename="D:\onu\ИПО\krgt\krgt\bin\Debug\krgt.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2015-12-16T22:25:31.8406053+02:00" queuing="2015-12-16T22:25:32.0006144+02:00" start="2015-12-16T22:25:32.0116151+02:00" finish="2015-12-16T22:25:32.4636409+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod6" storage="d:\onu\ипо\krgt\testproject1\bin\debug\testproject1.dll" id="d11305d8-8f4f-c704-3c83-80f1146d0d52">
+      <Execution id="5273faf1-84c0-4b16-9f97-91fdef3bb5a7" />
+      <TestMethod codeBase="D:/onu/ИПО/krgt/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.Test2, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod6" />
+    </UnitTest>
+    <UnitTest name="TestMethod7" storage="d:\onu\ипо\krgt\testproject1\bin\debug\testproject1.dll" id="c032974c-c399-20c0-5d78-a0f948c2a820">
+      <Execution id="ace6ba00-9858-4bf3-bff6-025202bfb956" />
+      <TestMethod codeBase="D:/onu/ИПО/krgt/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.Test2, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod7" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="c032974c-c399-20c0-5d78-a0f948c2a820" executionId="ace6ba00-9858-4bf3-bff6-025202bfb956" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d11305d8-8f4f-c704-3c83-80f1146d0d52" executionId="5273faf1-84c0-4b16-9f97-91fdef3bb5a7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="ace6ba00-9858-4bf3-bff6-025202bfb956" testId="c032974c-c399-20c0-5d78-a0f948c2a820" testName="TestMethod7" computerName="USER-34C25" duration="00:00:00.0432122" startTime="2015-12-16T22:25:32.0296161+02:00" endTime="2015-12-16T22:25:32.4096378+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ace6ba00-9858-4bf3-bff6-025202bfb956">
+    </UnitTestResult>
+    <UnitTestResult executionId="5273faf1-84c0-4b16-9f97-91fdef3bb5a7" testId="d11305d8-8f4f-c704-3c83-80f1146d0d52" testName="TestMethod6" computerName="USER-34C25" duration="00:00:00.0020645" startTime="2015-12-16T22:25:32.4276388+02:00" endTime="2015-12-16T22:25:32.4356393+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5273faf1-84c0-4b16-9f97-91fdef3bb5a7">
+    </UnitTestResult>
+  </Results>
+</TestRun>

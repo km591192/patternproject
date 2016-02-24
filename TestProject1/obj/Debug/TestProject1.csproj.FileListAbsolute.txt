@@ -1,0 +1,7 @@
+D:\onu\ИПО\krgt\TestProject1\obj\Debug\TestProject1.csprojResolveAssemblyReference.cache
+D:\onu\ИПО\krgt\TestProject1\bin\Debug\TestProject1.dll
+D:\onu\ИПО\krgt\TestProject1\bin\Debug\TestProject1.pdb
+D:\onu\ИПО\krgt\TestProject1\bin\Debug\krgt.exe
+D:\onu\ИПО\krgt\TestProject1\bin\Debug\krgt.pdb
+D:\onu\ИПО\krgt\TestProject1\obj\Debug\TestProject1.dll
+D:\onu\ИПО\krgt\TestProject1\obj\Debug\TestProject1.pdb

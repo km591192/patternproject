@@ -19,7 +19,7 @@ namespace krgt
 
     public abstract class Decorator : Food
     {
-        public abstract String getDescription();
+        public  abstract String getDescription();
     }
 
     //Desert 

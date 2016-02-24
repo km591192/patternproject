@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<users>
+<user desert="Desert">
+<prop1>Ice Cream</prop1>
+<prop2>Cake</prop2>
+<prop3>Pie</prop3>
+</user>
+
+<user desertsauce="Desert sauce">
+<prop4>Caramel + ice cream</prop4>
+<prop5>Chocolate + ice cream</prop5>
+<prop6>Cake + sauce</prop6>
+</user>
+
+<user potato="Potato">
+<prop7>Fried</prop7>
+</user>
+
+<user potatosauce="Potato sauce">
+<prop8>Potato + sauce</prop8>
+</user>
+
+<user sandwich="Sandwich">
+<chick>Chicken sandwich</chick>
+<cheese>Cheeseburger</cheese>
+<gamb>Gamburger</gamb>
+<beef>Beef sandwich</beef>
+<fish>Fish sandwich</fish>
+</user>
+
+<user salat="Salat">
+<fishsalat>Fish salat</fishsalat>
+<beefsalat>Beef salat</beefsalat>
+<chickensalat>Chicken salat</chickensalat>
+</user>
+
+<user salatsauce="Salat sauce">
+<fishsalatsauce>Fish salat + sauce</fishsalatsauce>
+<beefsalatsauce>Beef salat + sauce</beefsalatsauce>
+<chickensalatsauce>Chicken salat + sauce</chickensalatsauce>
+</user>
+
+<user drink="Drink">
+<sodawater>Soda water</sodawater>
+<water>Mineral water</water>
+<tea>Tea</tea>
+<coffee>Coffee</coffee>
+</user>
+
+<user addtodrink="Drink Component">
+<Honey>Honey(Tea)</Honey>
+<Lemon>Lemon</Lemon>
+<Syrop>Syrop(Coffee)</Syrop>
+</user>
+
+</users>
